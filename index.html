@@ -11,7 +11,16 @@
 <link rel="icon" type="image/x-icon" href="portfolio.png">
 <style>
    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
- 
+  /* Image hover effect: Zoom + Shadow */
+  img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  } 
 </style>
 </head>
 <body class="w3-light-grey">
@@ -127,6 +136,7 @@
           <h5 class="w3-opacity"><b>1. Hotel Guest Reservation, Registration, Billing and Collection System</b></h5>
           <p>A python web app developed in Odoo 19 Community Edition and PostgresSQL,  It is used by the hotel concierge to reserved rooms, accept guests, make regular room bills and collect guests payments.
           </p>
+          <p>My Role: <bold>Full Stack Developer (both front and back end)</bold></p>
           <p>The Hotel System</p>
           <img src="HotelMenu.JPG" style="width:100%" alt="Avatar">
           <p>The Guest Registration Page (Anonymized)</p>
@@ -142,9 +152,10 @@
           <p>A windows desktop application designed to support wharf operations including Inventory Management, 
               Disbursements and Payments, Cash Receipts, Accounts Receivables and Payable and Adjustments and Other Journal Adjustments. The database backend is My SQL.
           </p>
+          <p>My Role: <bold>Sole Developer</bold></p>
           <p>The Warehouse Inventory System  (Anonymized)</p>
           <img src="InventoryManagement.JPG" style="width:100%" alt="Avatar">
-          <p>The Inventory Summary Report (Anonymized)</p>
+          <p>The Inventory Summary Report (Anonymized)</p>A
           <img src="InventorySummary.JPG" style="width:100%" alt="Avatar">    
           <p>The Chart of Accounts  (Anonymized)</p>
           <img src="ChartofAccounts.JPG" style="width:100%" alt="Avatar">                   
@@ -159,6 +170,7 @@
           <br>
           <h5 class="w3-opacity"><b>3. Student Registration, Billing and Collection System</b></h5>
           <p>The revenue component of a school management system used to generate student bills upon enrollment, collect payments and make corresponding adjustments for discounts and scholarships.  It generates student registration summaries and cash collection and adjustments. The database backend is MS SQL server.</p>
+          <p>My Role: <bold>Sole Developer</bold></p>          
           <hr>
           <p>The Student Registration (Anonymized)</p>
           <img src="StudentRegistration.JPG" style="width:100%" alt="Avatar">     
@@ -176,6 +188,7 @@
           <h5 class="w3-opacity"><b>4. Company Payroll System</b></h5>
           <p>A windows desktop app used to generate semi monthly payroll based on a Employee 201 list. It also uses lookup tables to
             compute government required premiums.  It has email facility to send individual payslips by email. The database backend is My SQL.</p>
+          <p>My Role: <bold>Sole Developer</bold></p>
           <hr>
           <p>The Employee Master List (Anonymized)</p>
           <img src="EmployeeMasterList.JPG" style="width:100%" alt="Avatar">     
@@ -202,12 +215,18 @@
 
       </div>
     <!-- End Right Column -->
+        <br>
+        <button onclick="topFunction()" id="backToTop" title="Go to top" class="w3-button w3-teal w3-circle">
+           <i class="fa fa-arrow-up"></i>Back to Top
+        </button>
+        
     </div>
     
   <!-- End Grid -->
   </div>
   
   <!-- End Page Container -->
+
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
@@ -217,6 +236,24 @@
   <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/john-geralde-20141593/</i>
   <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
+<script>
+// Get the button
+let mybutton = document.getElementById("backToTop");
+
+// Show button after scrolling down 300px
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+// Scroll to top smoothly
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
 
 </body>
 </html>
