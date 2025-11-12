@@ -1,302 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>John Roy Geralde | Computer Science Instructor & Software Developer Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the portfolio of John Roy Geralde — Computer Science Instructor and Software Engineer from Davao City, Philippines. View projects in Odoo, Delphi, Python, and fullstack web development.">
-  <meta name="keywords" content="John Roy Geralde, software engineer, computer science instructor, Odoo developer, Delphi developer, Python developer, Davao City, Philippines, job portfolio, web developer, fullstack developer">
-  <meta name="author" content="John Roy Geralde">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://jrageralde.github.io/portfolio/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | John Roy Geralde</title>
 
-  <!-- Open Graph for social media -->
-  <meta property="og:title" content="John Roy Geralde | Software Developer Portfolio">
-  <meta property="og:description" content="Portfolio of John Roy Geralde — Computer Science Instructor and Software Developer specializing in Odoo, Delphi, and Python applications.">
-  <meta property="og:image" content="https://jrageralde.github.io/portfolio/IDPIC.jpg">
-  <meta property="og:url" content="https://jrageralde.github.io/portfolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_PH">
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/x-icon" href="portfolio.png">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="John Roy Geralde | Software Engineer Portfolio">
-  <meta name="twitter:description" content="Explore my software development portfolio and instructional work.">
-  <meta name="twitter:image" content="https://jrageralde.github.io/portfolio/IDPIC.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
 
-   
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html, body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
 
-<link rel="icon" type="image/x-icon" href="portfolio.png">
-<style>
-   html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-  /* Image hover effect: Zoom + Shadow */
-  img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-  }
+    /* ✅ Dark blue theme overrides */
+    .w3-dark-blue, .w3-teal {
+      background-color: #003366 !important;
+      color: #fff !important;
+    }
+    .w3-text-dark-blue, .w3-text-teal {
+      color: #003366 !important;
+    }
 
-  img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  } 
-</style>
+    /* ✅ Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #003366 !important;
+      color: white;
+    }
+
+    .navbar a:hover {
+      background-color: white !important;
+      color: #003366 !important;
+    }
+
+    /* ✅ Main layout */
+    .main-container {
+      flex: 1;
+      width: 100%;
+      margin-top: 60px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    /* ✅ Left column (Profile section) */
+    .left-column {
+      width: 30%;
+      background-color: #e8eef8;
+      padding: 30px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .left-column h1 {
+      white-space: nowrap;
+      margin: 10px 0 0 0;
+      font-size: 1.8em;
+      color: black;
+      font-weight: normal;
+    }
+
+    /* ✅ Right column (About section) */
+    .right-column {
+      width: 70%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .about-heading {
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 2em;
+      margin-top: 0;
+    }
+
+    .about-heading i {
+      color: #003366;
+    }
+
+    .w3-light-grey {
+      background-color: #dfe6ef !important;
+    }
+
+    .w3-circle {
+      border: 3px solid #003366;
+    }
+
+    /* ✅ Image Hover Effects */
+    img {
+      transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ✅ Footer */
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ✅ Responsive Design */
+    @media screen and (max-width: 900px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        width: 100%;
+        border: none;
+      }
+      .left-column {
+        border-bottom: 1px solid #ccc;
+      }
+      .right-column {
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+  </style>
 </head>
-<body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<body>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container w3-teal w3-center ">
-          <img src="IDPIC.jpg" class="w3-circle" style="width:70%; height:70%" alt="Avatar">
-          <div class="w3-display-bottom w3-container w3-text-black">
-            <h2 class="w3-text-black w3-display-bottom w3-container w3-text-black">John Roy Geralde</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Science Instructor/Software Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Davao City, Philippines</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jrgeralde@gmail.com</p>
-          <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p> -->
-          <p><i class="fa fa-brands fa-youtube fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.youtube.com/@roytek7667/playlists">www.youtube.com/@roytek7667/playlists</a></p>          
-           <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/john-geralde-20141593/">www.linkedin.com/in/john-geralde-20141593/</a>
-          <p><i class="fa fa-brands fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://jrageralde.github.io/ITC/">My Javascript Github Demos</a></p>          
-  
-             
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p style="margin-bottom:0px;">Delphi Desktop and Fullstack Web Development using UNIGUI</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p style="margin-bottom:0px;">Python Fullstack Web Development Using Odoo 18/19</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p style="margin-bottom:0px;">HTML, Javascript, CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p style="margin-bottom:0px;">Database Management using PostgresSQL, My SQL, MS SQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p style="margin-bottom:0px;">English (EF Set Certified as C1, Advanced) </p>
-          <div class="w3-light-grey w3-round-xlarge" style="margin-top:0px">
-            <div class="w3-round-xlarge w3-teal" style="height:24px; width:90%;"></div>
-          </div>
-          <p style="margin-bottom:0px;">Visayan</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
-          </div>
-          <p style="margin-bottom:0px;">Filipino</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-         
-          <br>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Education</b></p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996, Masters in Computer Science</h6>
-          <p style="margin-bottom:0px">Ateneo de Manila University</p>
-          <p style="margin-top:0px">Quezon City, Philippines</p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1987, BS in Management Engineering</h6>
-          <p style="margin-bottom:0px">Ateneo de Davao University</p>
-          <p style="margin-top:0px">Davao City, Philippines</p>
-
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Computer Science Instructor, Ateneo de Davao University</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 1987 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
-          <p>Conducts actual classroom instruction designed to achieve course objectives that are aligned with the schools mission and vision.</p>
-          <p>Collaborates with industry, makes project proposals for software development, develops and implements software solutions for various aspects of their operation.</p>
-          <p>Mentors students, fostering a collaborative learning environment that promoted innovation and knowledge sharing on various projects with industry partners</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Author of Various Youtube Instructional Videos on Computer Programming and Other Subject Areas</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
-          <p>Instructional Videos on History of Computing, Boolean Logic and Circuitverse, Assembly Language Programming, Database Desktop Development using C#, Introduction to Javascript,HTML and CSS.
-            <b>Youtube channel:</b><a href="https://www.youtube.com/@roytek7667/playlists">www.youtube.com/@roytek7667/playlists</a> </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Engineer / Web Developer</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
-          <p>Highly skilled software development professional bringing talents for software design, development and integration. Offering advance knowledge of in-demand programming languages. Gained extensive background in writing code and developing software solutions to various local industry clients.</p>
-          <p>An experienced Database Administrator with actual experience in Windows Server Failover Clustering and Replication.</p>
-          <p>An avid user of Linux and Ubuntu.</p>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Job Portfolio</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>1. Hotel Guest Reservation, Registration, Billing and Collection System</b></h5>
-          <p>A python web app developed in Odoo 19 Community Edition and PostgresSQL,  It is used by the hotel concierge to reserved rooms, accept guests, make regular room bills and collect guests payments.
-          </p>
-          <p>My Role: <bold>Full Stack Developer (both front and back end)</bold></p>
-          <hr>
-          <p>The Hotel System</p>
-          <img src="HotelMenu.JPG" style="width:100%" alt="Avatar">
-          <p>The Guest Registration Page (Anonymized)</p>
-          <img src="HotelGRC.JPG" style="width:100%" alt="Avatar">          
-          <p>The Guest Bill Page (Anonymized)</p>
-          <img src="GuestBill.JPG" style="width:100%" alt="Avatar">  
-          <p>The Guest Bill Report (Anonymized)</p>
-          <img src="GuestBillpdf.JPG" style="width:100%" alt="Avatar">                    
-        </div>
-        <div class="w3-container">
-          <br>
-          <h5 class="w3-opacity"><b>2. Wharf Operation System</b></h5>
-          <p>A windows desktop application designed to support wharf operations including Inventory Management, 
-              Disbursements and Payments, Cash Receipts, Accounts Receivables and Payables and Adjustments and Other Journal Adjustments. The database backend is My SQL.
-          </p>
-          <p>My Role: <bold>Sole Developer</bold></p>
-          <hr>
-          <p>The Warehouse Inventory System  (Anonymized)</p>
-          <img src="InventoryManagement.JPG" style="width:100%" alt="Avatar">
-          <p>The Inventory Summary Report (Anonymized)</p>
-          <img src="InventorySummary.JPG" style="width:100%" alt="Avatar">    
-          <p>The Chart of Accounts  (Anonymized)</p>
-          <img src="ChartofAccounts.JPG" style="width:100%" alt="Avatar">                   
-          <p>The Purchase Journal  (Anonymized)</p>
-          <img src="PurchaseJournals.JPG" style="width:100%" alt="Avatar">         
-          <p>The Cash Disbursement Journal (Anonymized)</p>
-          <img src="CashDisbursementJournal.JPG" style="width:100%" alt="Avatar">   
-          <p>The Customer Quotations  (Anonymized)</p>                     
-          <img src="CustomerQoutations.JPG" style="width:100%" alt="Avatar">             
-        </div>
-        <div class="w3-container">
-          <br>
-          <h5 class="w3-opacity"><b>3. Student Registration, Billing and Collection System</b></h5>
-          <p>The revenue component of a school management system used to generate student bills upon enrollment, collect payments and make corresponding adjustments for discounts and scholarships.  It generates student registration summaries and cash collection and adjustments. The database backend is MS SQL server.</p>
-          <p>My Role: <bold>Sole Developer</bold></p>          
-          <hr>
-          <p>The Student Registration (Anonymized)</p>
-          <img src="StudentRegistration.JPG" style="width:100%" alt="Avatar">     
-          <p>The Student Ledger (Anonymized)</p>
-          <img src="StudentLedger.JPG" style="width:100%" alt="Avatar">      
-          <p>The Student Master List (Anonymized)</p>
-          <img src="StudentMasterList.JPG" style="width:100%" alt="Avatar">                              
-          <p>The Chart of Accounts (Anonymized)</p>
-          <img src="ChartofAccountsSchool.JPG" style="width:100%" alt="Avatar">                              
-
-
-        </div>
-        <div class="w3-container">
-          <br>
-          <h5 class="w3-opacity"><b>4. Company Payroll System</b></h5>
-          <p>A windows desktop app used to generate semi monthly payroll based on a Employee 201 list. It also uses lookup tables to
-            compute government required premiums.  It has email facility to send individual payslips by email. The database backend is My SQL.</p>
-          <p>My Role: <bold>Sole Developer</bold></p>
-          <hr>
-          <p>The Employee Master List (Anonymized)</p>
-          <img src="EmployeeMasterList.JPG" style="width:100%" alt="Avatar">     
-          <p>The Payroll Register (Anonymized)</p>
-          <img src="PayrollRegistry.JPG" style="width:100%" alt="Avatar">      
-          <p>The Employee Payslip (Anonymized)</p>
-          <img src="EmployeePayslip.JPG" style="width:100%" alt="Avatar">                              
-          <p>The Email Facility</p>
-          <img src="EmailFacility.JPG" style="width:100%" alt="Avatar">                              
-          <p>The Lookup Tables</p>
-          <img src="LookupTables.JPG" style="width:100%" alt="Avatar">       
-
-        </div>
-
-
-      </div>
-      <br>
-      <hr>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My English Certification from EF Set</h2>
-        <div class="w3-container">
-              <img src="efset.jpg" style="width:100%" alt="Avatar">
-
-        </div>
-
-      </div>
-     <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Coursera GraphQL Training</h2>
-        <div class="w3-container">
-              <img src="CourseraGraphQL.JPG" style="width:100%" alt="Avatar">
-
-        </div>
-
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Coursera Reactjs Basics Training</h2>
-        <div class="w3-container">
-              <img src="CourseraReactBasics.JPG" style="width:100%" alt="Avatar">
-
-        </div>
-
-      </div>
-     <!-- end of right column-->
-        <br>
-        <button onclick="topFunction()" id="backToTop" title="Go to top" class="w3-button w3-teal w3-circle">
-           <i class="fa fa-arrow-up"></i>Back to Top
-        </button>
-        
-    </div>
-    
-  <!-- End Grid -->
+  <!-- ✅ Navbar -->
+  <div class="w3-bar navbar">
+    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> My Job Portfolio</a>
+    <a href="certificates.html" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> My Certificates</a>
   </div>
-  
-  <!-- End Page Container -->
 
-</div>
+  <!-- ✅ Main Content -->
+  <div class="main-container w3-animate-opacity">
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-brands fa-youtube w3-hover-opacity">https://www.youtube.com/@roytek7667/playlists</i>
-  <br>
-  <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/john-geralde-20141593/</i>
-  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-</footer>
-<script>
-// Get the button
-let mybutton = document.getElementById("backToTop");
+    <!-- ✅ Left Column -->
+    <div class="left-column">
+      <div class="w3-display-container w3-center">
+        <img src="IDPIC.jpg" class="w3-circle" style="width:70%; height:70%" alt="Avatar">
+        <div class="w3-display-bottom w3-container w3-text-black">
+          <h1>John Roy Geralde</h1>
+        </div>
+      </div>
 
-// Show button after scrolling down 300px
-window.onscroll = function() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-};
+      <div class="w3-container" style="text-align:left; margin-top:10px;">
+        <p><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Computer Science Instructor / Software Engineer</p>
+        <p><i class="fa fa-home fa-fw w3-margin-right"></i>Davao City, Philippines</p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right"></i>jrgeralde@gmail.com</p>
+        <p><i class="fa fa-youtube fa-fw w3-margin-right"></i>
+          <a href="https://www.youtube.com/@roytek7667/playlists" target="_blank">YouTube Channel</a></p>
+        <p><i class="fa fa-linkedin fa-fw w3-margin-right"></i>
+          <a href="https://www.linkedin.com/in/john-geralde-20141593/" target="_blank">LinkedIn Profile</a></p>
+        <p><i class="fa fa-github fa-fw w3-margin-right"></i>
+          <a href="https://jrageralde.github.io/ITC/" target="_blank">My JavaScript GitHub Demos</a></p>
 
-// Scroll to top smoothly
-function topFunction() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-</script>
+        <hr>
+
+        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
+        <p>Delphi Desktop and Fullstack Web Development using UNIGUI</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+        </div>
+
+        <p>Python Fullstack Web Development Using Odoo 18/19</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+        </div>
+
+        <p>HTML, Javascript, CSS</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+        </div>
+
+        <p>Database Management using PostgreSQL, MySQL, MS SQL</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:95%">95%</div>
+        </div>
+
+        <br>
+        <p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right"></i>Languages</b></p>
+        <p>English (EF Set Certified as C1, Advanced) — 90%</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-round-xlarge w3-dark-blue" style="height:24px;width:90%"></div>
+        </div>
+        <p>Visayan — 95%</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-round-xlarge w3-dark-blue" style="height:24px;width:95%"></div>
+        </div>
+        <p>Filipino — 90%</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-round-xlarge w3-dark-blue" style="height:24px;width:90%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Right Column -->
+    <div class="right-column">
+      <div class="w3-container">
+        <h2 class="w3-text-black about-heading"><i class="fa fa-user"></i> About Me</h2>
+      </div>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Computer Science Instructor, Ateneo de Davao University</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 1987 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Conducts actual classroom instruction designed to achieve course objectives that are aligned with the school's mission and vision.</p>
+        <p>Collaborates with industry, makes project proposals for software development, develops and implements software solutions for various aspects of their operation.</p>
+        <p>Mentors students, fostering a collaborative learning environment that promotes innovation and knowledge sharing on various projects with industry partners.</p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Author of Various Youtube Instructional Videos on Computer Programming and Other Subject Areas</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Instructional Videos on History of Computing, Boolean Logic and Circuitverse, Assembly Language Programming, Database Desktop Development using C#, Introduction to Javascript, HTML and CSS.  
+          <b>Youtube channel:</b> <a href="https://www.youtube.com/@roytek7667/playlists">www.youtube.com/@roytek7667/playlists</a></p>
+        <hr>
+      </div>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Software Engineer / Web Developer</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Highly skilled software development professional bringing talents for software design, development and integration. Offering advanced knowledge of in-demand programming languages. Gained extensive background in writing code and developing software solutions to various local industry clients.</p>
+        <p>An experienced Database Administrator with actual experience in Windows Server Failover Clustering and Replication.</p>
+        <p>An avid user of Linux and Ubuntu.</p>
+        <hr>
+      </div>
+
+      <!-- ✅ Education -->
+      <div class="w3-container">
+        <p class="w3-large w3-text-theme"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Education</b></p>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996, Masters in Computer Science</h6>
+        <p>Ateneo de Manila University</p>
+        <p>Quezon City, Philippines</p>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1987, BS in Management Engineering</h6>
+        <p>Ateneo de Davao University</p>
+        <p>Davao City, Philippines</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>Find me on social media.</p>
+    <p>
+      <i class="fa fa-youtube w3-hover-opacity"></i>
+      <a href="https://www.youtube.com/@roytek7667/playlists"> YouTube</a> |
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a href="https://www.linkedin.com/in/john-geralde-20141593/"> LinkedIn</a>
+    </p>
+  </footer>
 
 </body>
 </html>
